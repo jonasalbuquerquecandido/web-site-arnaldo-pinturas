@@ -81,7 +81,21 @@ section {
 }
 
 .home-container {
-
+    background: url(images/empresa-de-pintura.png);
+    background-position: center;
+    background-size: cover;
 }
+
+/* Grave essa section, organiza todo o conteúdo do background */
+.section {
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 100rem;
+}
+
 
 
