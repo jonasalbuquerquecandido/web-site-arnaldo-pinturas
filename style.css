@@ -114,10 +114,11 @@ section {
     background-color: #A0D3E9;
     text-decoration: none;
     text-align: left;
+    color: black;
 }
 
 .btn-orçamento:hover {
-    font-size: 1.1rem;
+    font-size: 1.07rem;
 }
 
 
