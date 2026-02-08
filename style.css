@@ -48,8 +48,9 @@ section {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 100vh;
 }
 
 .navbar a {
@@ -59,7 +60,7 @@ section {
 }
 
 .navbar a:hover {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: #35A5BC;
     transition: 0.2s;
     background-color: #ffffff;
@@ -68,11 +69,17 @@ section {
 
 }
 
+.icons {
+    padding: 0;
+    margin: 0;
+    
+}
+
 .icons img {
     margin: 0.8rem;
     cursor: pointer;
     transition: linear 0,2s;
-    gap: 1rem;
+    gap: 1rem;   
 }
 
 .home-container {
@@ -113,12 +120,15 @@ section {
     cursor: pointer;
     background-color: #A0D3E9;
     text-decoration: none;
-    text-align: left;
     color: black;
+    padding: 0 1rem;
+    
 }
 
 .btn-orçamento:hover {
     font-size: 1.07rem;
+    background-color: #F3AF05;
+
 }
 
 
