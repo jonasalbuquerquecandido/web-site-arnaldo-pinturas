@@ -1,25 +1,47 @@
-# Website Arnaldo Pinturas
+# 🎨 Website Arnaldo Pinturas
 
-Projeto de landing page desenvolvido para uma empresa real de serviços de pintura.
+Landing page desenvolvida para apresentar serviços de pintura residencial e comercial.
 
-## Objetivo
+---
 
-Criar uma presença digital simples, clara e funcional para apresentação dos serviços.
+## 🎯 Objetivo
 
-## Tecnologias
+Criar uma presença digital simples, clara e profissional para divulgação dos serviços e contato com clientes.
+
+---
+
+## 🛠 Tecnologias utilizadas
 
 - HTML5
 - CSS3
 
-## Funcionalidades
+---
 
-- Apresentação de serviços
-- Sessão de contato
-- Layout responsivo (se for)
+## 📌 Funcionalidades
 
-## Próximas melhorias
+- Apresentação dos serviços
+- Seção "Sobre"
+- Contato via formulário / WhatsApp
+- Layout responsivo
+
+---
+
+## 🚀 Próximas melhorias
 
 - Implementar validação de formulário com JavaScript
-- Adicionar animações
-- Melhorar SEO
-- Otimizar responsividade
+- Melhorar responsividade mobile
+- Adicionar animações suaves
+- Otimização para SEO
+
+---
+
+## 📷 Preview
+
+(demonstração futura)
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+Jonas Albuquerque  
+[LinkedIn](www.linkedin.com/in/jonas-albuquerque-cândido)
