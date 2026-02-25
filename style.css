@@ -132,5 +132,15 @@ section {
 
 }
 
+footer {
+    background-color: #0896C7;
+}
+
+footer p {
+    height: 3rem;
+    color: white;
+    text-align: center;
+    justify-items: center;
+}
 
 
