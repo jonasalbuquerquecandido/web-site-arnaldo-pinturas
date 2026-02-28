@@ -48,7 +48,6 @@ body {
 }
 
 .header {
-    margin-bottom: 40px;
 }
 
 .nav-container {
@@ -75,7 +74,7 @@ body {
     margin: 0 15px;
 }
 
-.nav-container a {
+.nav-container ul li a {
     color: var(--color-text-dark);
     font-weight: bold;
     text-decoration: none;
@@ -86,7 +85,17 @@ body {
     transition: var(--transition-default);
 }
 
-.btn-whatsapp {}
+.btn-whatsapp {   
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: var(--color-whatsapp);
+}
+
+.btn-whatsapp:hover {
+    color: white;
+    background: var(--color-whatsapp-dark);
+}
 
 .home {
     text-align: center;
