@@ -1,18 +1,36 @@
-@charset "UTF-8";
-
 :root {
-    --border: #c09c50;
-    --bg: #ffffff;
+
+  /* =========================
+     PALETA DE CORES
+  ========================= */
+
+  --color-primary: #0077cc;
+  --color-primary-dark: #005fa3;
+  --color-primary-light: #00aaff;
+
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ebc5a;
+
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #ffffff;
+
+  --color-bg-light: #f5f7fa;
+  --color-bg-section: #f0f4f8;
+  --color-bg-white: #ffffff;
+
+  --color-footer-bg: #1a1a1a;
+
+  --shadow-light: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-medium: 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-strong: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 * {
     margin: 0;
     padding: 0;
-    outline: none;
-    border: none;
     text-decoration: none;
-    text-transform: capitalize;
-    font-family: "Roboto", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -71,76 +89,14 @@ section {
 
 }
 
-.icons {
-    padding: 0;
-    margin: 0;
-    
-}
-
-.icons img {
-    margin: 0.8rem;
-    cursor: pointer;
-    transition: linear 0,2s;
-    gap: 1rem;   
-}
-
-.home-container {
-    background: url(images/empresa-de-pintura.png);
-    background-position: center;
-    background-size: cover;
-}
-
-/* Grave essa section, organiza todo o conteúdo do background */
-.section {
-    align-items: center;
-    display: flex;
-    min-height: 100vh;
-}
-
-.content {
-    max-width: 100rem;
-}
-
-.content h2 {
-    text-align: center;
-    text-transform: uppercase;
-    width: 500px;
-    padding-bottom: 1rem;
-}
-
-.content p {
-    font-size: large;
-    width: 500px;
-    text-align: justify;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.btn-orçamento {
-    border: 1px solid black;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    background-color: #A0D3E9;
-    text-decoration: none;
-    color: black;
-    padding: 0 1rem;
-}
-
-.btn-orçamento:hover {
-    font-size: 1.07rem;
-    background-color: #F3AF05;
-
-}
-
 footer {
-    background-color: #0896C7;
+    background-color: var(--color-footer-bg);
 }
 
 footer p {
     height: 3rem;
     color: white;
     text-align: center;
-    justify-items: center;
 }
 
 
