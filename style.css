@@ -190,8 +190,32 @@ body {
 }
 
 #about {
-    height: 20rem;
-    background: linear-gradient(to left, var(--color-primary), var(--color-primary));
+    height: 27rem;
+    background: linear-gradient(to left, var(--color-primary), var(--color-primary-light));
+    color: white;
+}
+
+#about h2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: xx-large;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about p {
+    text-align: justify;
+    padding: 1rem;
+    font-size: 18px;
+    width: 90%;
+}
+
+.about-block img {
+    padding-right: 4rem;
+    padding-top: 1rem;
 }
 
 #call-to-action {
@@ -242,7 +266,7 @@ body {
 }
 
 .contact-list {
-    
+    padding: 1rem 2rem;   
 }
 
 footer {
