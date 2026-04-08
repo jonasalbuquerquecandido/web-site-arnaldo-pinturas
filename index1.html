@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="/images/favicon-eliptico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon-eliptico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
     <title>Arnaldo Pinturas</title>
 </head>
 
@@ -63,35 +66,44 @@
 
         <section id="portifolio">
             <h2>Serviços Concluídos</h2>
-            <div class="portifolio-block">
-                <div class="service-card">
-                    <h3>Pintura Residencial</h3>
-                    <p>Ambientes internos e externos com acabamento impecável.</p>
-                    <img src="" alt="" width="150px">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <img src="images/pintura.png" width="200px" alt=""></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
                 </div>
-                <div class="portifolio-block">
-                    <h3>Pintura Comercial</h3>
-                    <p>Serviços rápidos e organizados para empresas.</p>
-                </div>
-                <div class="portifolio-block">
-                    <h3>Pintura Fachadas</h3>
-                    <p>Valorização e proteção da estrutura externa.</p>
-                </div>
-                <div class="portifolio-block">
-                    <h3>Texturas e Efeitos</h3>
-                    <p>Personalização moderna para o seu espaço</p>
-                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
+
+
         </section>
 
         <section id="about">
             <h2>Sobre a Arnaldo Pinturas</h2>
             <div class="about-container">
                 <div class="about-block">
-                    <p>A <strong>Arnaldo Pinturas</strong> é especializada em serviços de pintura residencial e comercial, oferecendo soluções que unem qualidade, organização e acabamento profissional.
-                    Com experiência no setor, nossa equipe trabalha com atenção aos detalhes, utilizando materiais de qualidade e técnicas adequadas para garantir um resultado duradouro e esteticamente impecável. Cada projeto é realizado com planejamento, limpeza no processo e compromisso com prazos.
-                    Nosso objetivo é transformar ambientes, valorizando cada espaço com um acabamento bem feito e um atendimento transparente do início ao fim.
-                    Seja para renovar um ambiente, pintar uma fachada ou realizar um projeto completo de pintura, a **Arnaldo Pinturas** está pronta para entregar um serviço confiável e com alto padrão de qualidade.
+                    <p>A <strong>Arnaldo Pinturas</strong> é especializada em serviços de pintura residencial e
+                        comercial, oferecendo soluções que unem qualidade, organização e acabamento profissional.
+                        Com experiência no setor, nossa equipe trabalha com atenção aos detalhes, utilizando materiais
+                        de qualidade e técnicas adequadas para garantir um resultado duradouro e esteticamente
+                        impecável. Cada projeto é realizado com planejamento, limpeza no processo e compromisso com
+                        prazos.
+                        Nosso objetivo é transformar ambientes, valorizando cada espaço com um acabamento bem feito e um
+                        atendimento transparente do início ao fim.
+                        Seja para renovar um ambiente, pintar uma fachada ou realizar um projeto completo de pintura, a
+                        **Arnaldo Pinturas** está pronta para entregar um serviço confiável e com alto padrão de
+                        qualidade.
                     </p>
                 </div>
                 <div class="about-block">
@@ -133,8 +145,36 @@
         </section>
     </main>
     <footer>
-        <p>Arnaldo Pinturas 2026  &copy;  Todos os Direitos Reservados</p>
+        <p>Arnaldo Pinturas 2026 &copy; Todos os Direitos Reservados</p>
     </footer>
+    <script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+
+  const swiper = new Swiper(...)
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>

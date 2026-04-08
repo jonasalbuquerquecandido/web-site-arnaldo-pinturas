@@ -59,7 +59,7 @@
     }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -99,7 +99,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .nav-container {
@@ -135,7 +135,7 @@ body {
     transition: var(--transition-default);
 }
 
-.btn-whatsapp {   
+.btn-whatsapp {
     color: white;
     border-radius: 5px;
     padding: 0.55rem 0.8rem;
@@ -211,9 +211,10 @@ body {
 }
 
 .service-card:hover {
-     transform: translateY(-12px);
-     box-shadow: var(--shadow-strong);
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-strong);
 }
+
 .service-card h3 {
     color: var(--color-primary);
     padding: 1rem;
@@ -321,12 +322,12 @@ body {
 }
 
 #contact a {
-    text-decoration: none ;
+    text-decoration: none;
     color: var(--color-primary);
 }
 
 .contact-list {
-    padding: 1rem 2rem;   
+    padding: 1rem 2rem;
 }
 
 footer {
@@ -343,4 +344,28 @@ footer p {
 
 section {
     padding: 60px 20px;
+}
+
+/* CARROSSEL */
+.swiper {
+    height: 500px;
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-medium);
+    transition: transform 0.3s;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
 }
