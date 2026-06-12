@@ -47,18 +47,18 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 0;
+   
 }
 
 .nav img{
-    height: 160px;
-    width: 160px;
-    margin-left: 16px;
+    height: 80px;
+    margin: 0.5rem;
+    
 }
 
 nav{
     display:flex;
-    gap:30px;
+    gap:30px;   
 }
 
 nav a{
