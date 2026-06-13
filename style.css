@@ -228,24 +228,138 @@ h2{
     margin-bottom:10px;
 }
 
-/* PORTFOLIO */
+/* =========================
+   PORTFÓLIO
+========================= */
 
-.galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
 }
 
-.galeria img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:15px;
-    transition:.4s;
+/* =========================
+   CARD
+========================= */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+    transition: transform .3s ease;
 }
 
-.galeria img:hover{
-    transform:scale(1.03);
+.gallery-item:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.gallery-item img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+    filter: brightness(.85);
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.5) 45%,
+            rgba(0, 0, 0, 0.05) 100%
+        );
+
+    opacity: 0;
+
+    transition: opacity .35s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.overlay h3,
+.overlay p {
+    transform: translateY(20px);
+    transition: .35s ease;
+}
+
+.gallery-item:hover .overlay h3,
+.gallery-item:hover .overlay p {
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.overlay p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
+
+    .overlay {
+        opacity: 1;
+    }
+
+    .overlay h3,
+    .overlay p {
+        transform: translateY(0);
+    }
 }
 
 /* DIFERENCIAIS */
