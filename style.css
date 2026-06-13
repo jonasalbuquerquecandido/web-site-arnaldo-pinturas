@@ -96,7 +96,7 @@ nav a:hover{
         rgba(29,79,145,.85),
         rgba(0,0,0,.75)
     ),
-    url("imagens/hero.jpg");
+    url("/images/herobackground.png");
 
     background-size:cover;
     background-position:center;
@@ -201,7 +201,7 @@ h2{
 /* SERVIÇOS */
 
 .servicos{
-    background:var(--cinza);
+    background:var(--amarelo);
 }
 
 .cards{
@@ -278,6 +278,7 @@ h2{
 
 .depoimentos .card{
     border-top:5px solid var(--amarelo);
+    text-align: center;
 }
 
 /* CONTATO */
