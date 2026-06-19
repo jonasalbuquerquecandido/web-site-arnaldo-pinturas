@@ -45,4 +45,4 @@ Criar uma presença digital simples, clara e profissional para divulgação dos 
 ## 👨‍💻 Desenvolvido por
 
 Jonas Albuquerque  
-[LinkedIn](www.linkedin.com/in/jonas-albuquerque-cândido)
+[LinkedIn](https://www.linkedin.com/in/jonas-albuquerque-c%C3%A2ndido/)
